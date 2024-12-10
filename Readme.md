@@ -13,10 +13,10 @@ npm install
 - npm
 - MongoDB
 #### Setup 
--Crete a .env file on /server  with given values
+- Crete a .env file on /server  with given values
 
-PORT=5000
-MONGO_URL=mongodb://localhost:27017/blog_app
+- PORT=5000
+- MONGO_URL=mongodb://localhost:27017/blog_app
 
 
 
