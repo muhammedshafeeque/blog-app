@@ -53,7 +53,7 @@ const Home = () => {
                     </div>
                   </Card.Subtitle>
                   <Card.Text>{post.excerpt}</Card.Text>
-                  <Button variant="primary">Read More</Button>
+                  <Button variant="primary" onClick={()=>{navigate(ROUTES.VIEW_BLOG+post._id)}}>Read More</Button>
                 </Card.Body>
               </Card>
             </Col>

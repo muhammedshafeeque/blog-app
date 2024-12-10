@@ -5,6 +5,7 @@ import Home from "./Pages/Home/Home";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "./Components/Header/Header";
 import BlogCreation from "./Pages/CreateBlog/CreateBlog";
+import BlogView from "./Pages/View/View";
 function App() {
   return (
     <>
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path={ROUTES.HOME} exact element={<Home />} />
         <Route path={ROUTES.CREATE_BLOG} exact element={<BlogCreation />} />
+        <Route path={ROUTES.VIEW_BLOG+':id'} exact element={<BlogView />} />
       </Routes>
     </>
   );

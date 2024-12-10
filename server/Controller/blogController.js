@@ -26,3 +26,11 @@ export const createBlog = async (req, res, next) => {
     next(error);
   }
 };
+export const getBlog=async(req,res,next)=>{
+    try {
+        let blog = await BLOG.findById(req.params.id);
+        res.send(blog);
+      } catch (error) {
+        next(error);
+      }
+}
